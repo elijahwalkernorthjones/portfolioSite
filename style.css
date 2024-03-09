@@ -1,0 +1,101 @@
+
+
+/* Header class with Raleway font and bold font weight */
+.header {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700; /* Bold */
+    font-size: 3em;
+    z-index: 1;
+  }
+  
+  /* Paragraph class with Raleway font and normal font weight */
+  .paragraph {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400; /* Normal */
+    z-index: 1;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent; /* No background color */
+    color: black; /* Black text color */
+    transition: opacity 0.5s;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit; /* Inherit text color from parent (black) */
+}
+
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* This will make the navbar visible when hovered */
+nav:hover {
+    opacity: 1;
+}
+
+/* This will create a smooth scrolling effect */
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background: radial-gradient(195.19% 85.09% at 50% 48.36%, rgb(119, 86, 61) 0%, rgb(30, 38, 49) 100%);
+}
+
+.aboutImage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This will vertically center the animation */
+    height: 80%; /* This will make the container take up the full height of the viewport */
+}
+
+#about-animation {
+    width: 450px;
+    height: 450px;
+}
+
+.aboutText {
+    position: absolute; /* Position the text absolutely within .aboutImage */
+    top: 50%; /* Move the text up by 20% of the parent's height */
+    width: 100%; /* Ensure the text spans the full width of the parent */
+    text-align: center; /* Center the text horizontally */
+    transform: translate(-10%, 0);
+    padding-bottom: 50px;
+}
+
+
+#about {
+    padding: 5% 10% 20%;
+    margin-bottom: 30%;
+}
+
